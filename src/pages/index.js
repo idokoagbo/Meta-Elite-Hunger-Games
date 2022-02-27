@@ -35,8 +35,8 @@ function Index() {
                 </div>
             </header>
             <img src={Bottom} className="img-fluid bg-bottom" />
-            <img src={bg} className="img-fluid" style={{ height: 120, width: '100%' }} />
-            <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
+            {/* <img src={bg} className="img-fluid" style={{ height: 120, width: '100%' }} />
+            <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} /> */}
             <div class="character-area">
                 <div className='container'>
                     <div className="row">

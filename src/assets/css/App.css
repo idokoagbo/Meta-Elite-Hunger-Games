@@ -52,15 +52,20 @@
 .App-link {
   color: #61dafb;
 }
-.bg-bottom{
-  position: absolute;
-  left: 0%;
-  top: 50%;
-}
 .bg-top{
   position: absolute;
   left: 0%;
-  margin-top: -15%;
+  margin-top: -5%;
+}
+.bg-bottom{
+  position: absolute;
+  left: 0%;
+  margin-top: -50vh;
+}
+@media screen and (max-width: 780px) {
+  .bg-bottom {
+    margin-top: -20vh;
+  }
 }
 @keyframes App-logo-spin {
   from {
