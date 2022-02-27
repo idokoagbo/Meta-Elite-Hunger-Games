@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo.png';
 import bsc from '../assets/binance-smart-chain.png';
 import '../assets/css/App.css';
 import Hero from '../components/hero';
@@ -12,9 +12,6 @@ function Index() {
             <header className="App-header">
                 <Hero />
                 <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Meta Elite Hunger Games
-                </p>
                 <p>
                     <a className='btn btn-secondary btn-lg'>Seed Sale</a> &nbsp; <a className='btn btn-dark btn-lg'>Claim Airdrop</a>
                 </p>
