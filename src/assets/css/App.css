@@ -14,13 +14,28 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    /* animation: App-logo-spin infinite 20s linear; */
+    animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
   background-color: #282c34;
-  background-image: url('../bg.jpg');
+  background-image: url('../bg-main.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: white;
+}
+
+/* my styles */
+
+.character-area{
+  background-color: #282c34;
+  background-image: url('../bg-2.jpg');
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -30,16 +45,30 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.character-area .row {
+  margin-top: 50px;
+}
 
 .App-link {
   color: #61dafb;
 }
-
+.bg-bottom{
+  position: absolute;
+  left: 0%;
+  top: 50%;
+}
+.bg-top{
+  position: absolute;
+  left: 0%;
+  margin-top: -15%;
+}
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotateY(0deg);
+    /* transform: rotateX(0deg); */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotateY(360deg);
+    /* transform: rotateX(90deg); */
   }
 }
