@@ -6,13 +6,93 @@ import Hero from '../components/hero';
 import Nav from '../components/nav';
 import Top from '../assets/top-ix.png';
 import Bottom from '../assets/bottom-ix.png';
-import bg from '../assets/bg-2.jpg';
+import Character from '../components/character';
 
 import champ from '../assets/characters/champ.png';
 import tribute from '../assets/characters/tribute.png';
 import governor from '../assets/characters/governor.png';
+import Partner from '../components/partner';
 
 function Index() {
+
+    const characters = [
+        {
+            img: champ,
+            title: "Champion"
+        },
+        {
+            img: tribute,
+            title: "Tribute"
+        },
+        {
+            img: governor,
+            title: 'Governor'
+        },
+        {
+            img: governor,
+            title: 'Random'
+        },
+    ];
+
+    const partners = [
+        {
+            img: 'https://kryxivia.io/assets/img/partners/unicrypt.svg',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/bakery.png',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/enjinstarter.png',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/poolz.png',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/dextool.png',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/poly-network.svg',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/ajoobz.png',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/dct-logo.png',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/defiboost-logo.png',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/checkdot.svg',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/locklet.svg',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/maxx.png',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/vespertine.png',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/avg.svg',
+            url: null
+        },
+    ]
+
     return (
         <div className="">
             <Nav logo={logo} />
@@ -26,7 +106,7 @@ function Index() {
                 <div className='row'>
                     <div className='col'>
                         <center>Designed with</center>
-                        <img src='https://raw.githubusercontent.com/Kryxivia/Kryxivia.Website/414432bd650657cb09f4952e64bd555af16aa78f/assets/img/unity.svg' height={50} />
+                        <img src='https://raw.githubusercontent.com/idokoagbo/Meta-Elite-Hunger-Games/769421621928b651d12382e460841381120f53ea/src/assets/unity.svg' height={50} />
                     </div>
                     <div className='col'>
                         <center>Powered by</center>
@@ -35,59 +115,29 @@ function Index() {
                 </div>
             </header>
             <img src={Bottom} className="img-fluid bg-bottom" />
-            {/* <img src={bg} className="img-fluid" style={{ height: 120, width: '100%' }} />
-            <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} /> */}
-            <div class="character-area">
+            <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
+            <section className="character-area">
                 <div className='container'>
-                    <div className="row">
-                        <div className="col-md-8">
-                            <h1>MEHG Champions</h1>
-                            <p>
-                                Meta Elite Hunger Games Champions consist of demi gods and powerful ancient warriors that wield immense powers capable of protecting their district and the people these characters include the tributes, the governing bodies and the community in whole, they are called the MEHG champions.
-                            </p>
-                        </div>
-                        <div className='col-md-4'>
-                            <div className='character'>
-                                <img src={champ} width={200} className='img-fluid' />
-                            </div>
-
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className='col-md-4'>
-                            <div className='character'>
-                                <img src={tribute} width={200} className='img-fluid' />
-                            </div>
-
-                        </div>
-                        <div className="col-md-8">
-                            <h1>Tributes</h1>
-                            <p>
-                                Tributes are expirenced warriors with strong will power and horned fighting techniques warriors amongst every clan. Players can purchase the tributes NFTs from the HungergamesDEX or qualify to become a NFT holder.
-                            </p>
-                            <p>
-                                Gain access to enhanced character features, cool character skins and a collection of legendary weaponry.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col-md-8">
-                            <h1>Governors</h1>
-                            <p>
-                                Governors  are derived from Demi gods and some of the greatest ancient warriors from the various tribes, they all wield immense powers and terrifying strengths which makes them worthy of being rulers of the districts.
-                            </p>
-                            <p>
-                                They adventure to other districts and try to exploit these districts, the governors will clash and battle for territory and land to expand their districts. These battles are wild and very intense confrontations to the death.
-                            </p>
-                        </div>
-                        <div className='col-md-4'>
-                            <div className='character'>
-                                <img src={governor} width={200} className='img-fluid' />
-                            </div>
-                        </div>
+                    <h1 className='text-center'>MEHG Champions</h1>
+                    <div className='row'>
+                        {
+                            characters.map((character) => <Character title={character.title} img={character.img} />)
+                        }
                     </div>
                 </div>
-            </div>
+            </section>
+            <img src={Bottom} className="img-fluid bg-bottom" />
+            <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
+            <section className='character-area'>
+                <div className='container'>
+                    <h4 className='text-center'>Our partners</h4>
+                    <div className='row'>
+                        {
+                            partners.map((partner) => <Partner url={partner.url} img={partner.img} />)
+                        }
+                    </div>
+                </div>
+            </section>
         </div>
     );
 }
