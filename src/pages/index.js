@@ -11,6 +11,7 @@ import Character from '../components/character';
 import champ from '../assets/characters/champ.png';
 import tribute from '../assets/characters/tribute.png';
 import governor from '../assets/characters/governor.png';
+import random from '../assets/characters/d109aafc087bffb7fc80a2c607d07abf.png'
 import Partner from '../components/partner';
 
 function Index() {
@@ -29,8 +30,8 @@ function Index() {
             title: 'Governor'
         },
         {
-            img: governor,
-            title: 'Random'
+            img: random,
+            title: 'Warrior'
         },
     ];
 
@@ -64,10 +65,6 @@ function Index() {
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/dct-logo.png',
-            url: null
-        },
-        {
             img: 'https://kryxivia.io/assets/img/partners/defiboost-logo.png',
             url: null
         },
@@ -89,6 +86,10 @@ function Index() {
         },
         {
             img: 'https://kryxivia.io/assets/img/partners/avg.svg',
+            url: null
+        },
+        {
+            img: 'https://kryxivia.io/assets/img/partners/dct-logo.png',
             url: null
         },
     ]
@@ -117,8 +118,12 @@ function Index() {
             <img src={Bottom} className="img-fluid bg-bottom" />
             <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
             <section className="character-area">
-                <div className='container'>
-                    <h1 className='text-center'>MEHG Champions</h1>
+                <div className='container text-center'>
+                    <hr className='champ-title' />
+                    <br />
+                    <p>At first there was nothing and then we had MetaElite Hunger Games. By taking on the role of a MEHG champion you start you journey on Meta planet where you have to fend for yourself, mine weapons and amour along with other useful items you come across. </p>
+                    <p>You then begin your travels across a land of beauty and carfully maneuvering your way past natural hazards and bandits. You will see different people, cultures and tribes, discovering a world beyond your wildest imaginations.</p>
+
                     <div className='row'>
                         {
                             characters.map((character) => <Character title={character.title} img={character.img} />)
@@ -130,11 +135,69 @@ function Index() {
             <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
             <section className='character-area'>
                 <div className='container'>
-                    <h4 className='text-center'>Our partners</h4>
+                    <hr className='partner-title' />
+                    <br />
                     <div className='row'>
                         {
                             partners.map((partner) => <Partner url={partner.url} img={partner.img} />)
                         }
+                    </div>
+                </div>
+            </section>
+
+            <img src={Bottom} className="img-fluid bg-bottom" />
+            <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
+            <section className='character-area stats'>
+                <div className='container text-center'>
+                    <hr className='stats-title' />
+                    <br />
+                    <p>An AAA gaming experience with cinematic quality 3D special effects in an interactive open-world RPG built in DeFi.</p>
+                    <p>MetaElite Hunger Games merges gaming and cryptocurrency in a unique synergy and, a fully decentralized protocol, Meta Elite Hunger Games represents a new age in gaming.</p>
+
+                    <hr />
+
+                    <div className='row'>
+                        <div className='col-md-3'>
+                            <div className='container'>
+                                <img src='https://kryxivia.io/assets/img/knight-kryxivia.png' className='card-img' />
+                                <div className='text-center'>
+                                    <small>Players online</small>
+                                    <h4 className="card-title text-success">N/A</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-md-3'>
+                            <div className='container'>
+                                <img src='https://kryxivia.io/assets/img/kxa-token_kryxivia.png' className='card-img' />
+                                <div className='text-center'>
+                                    <small>Players online</small>
+                                    <h4 className="card-title text-danger">$1,988,871</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-md-3'>
+                            <div className='container'>
+                                <img src='https://kryxivia.io/assets/img/kxs-token_kryxivia.png' className='card-img' />
+                                <div className='text-center'>
+                                    <small>Market cap</small>
+                                    <h4 className="card-title text-info">$156,000</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='col-md-3'>
+                            <div className='container'>
+                                <img src='https://kryxivia.io/assets/img/mineted-kryxivia.png' className='card-img' />
+                                <div className='text-center'>
+                                    <br /><br />
+                                    <small>Meta Elite NFT Minted</small>
+
+                                    <h4 className="card-title text-success">N/A</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
