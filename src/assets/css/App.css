@@ -1,6 +1,14 @@
-*{
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+*, body{
   padding: 0;
   margin: 0;
+  font-family: 'Lato', sans-serif;
+    /* font-family: 'Rubik', sans-serif; */
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body{
@@ -46,12 +54,19 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 14pt;
   color: white;
   position: relative;
   z-index: 100;
   margin-top: 10%;
 }
+
+/* section.stats{
+  background-image: url('https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/bg-kxa.jpg?raw=true');
+  background-size: cover;
+  opacity: 0.;
+  position: unset;
+} */
 
 .App-link {
   color: #61dafb;
@@ -72,14 +87,73 @@ body{
   }
 }
 
+.row > .partner-img{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
 .partner-img{
   filter: grayscale(1);
   transition: 1s;
   padding: 10px;
+  text-align: center;
+  height: 100px;
+  overflow: hidden;
+}
+
+.partner-img img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .partner-img:hover{
   filter: grayscale(0);
+  background-image: url('../bg-2.jpg');
+  box-shadow: 0px 0px 5px #282c34;
+  cursor: pointer;
+}
+
+hr {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #fff;
+  color: #fff;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+}
+hr:after {
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: url('../bg-2.jpg');
+}
+hr.partner-title:after{
+  content: "Our partners";
+}
+hr.champ-title:after{
+  content: "MEHG Champions";
+}
+hr.stats-title:after{
+  content: "Game Statistics";
+}
+
+.navbar {
+  background: linear-gradient(#453643, #221C22);
+  font-size: 18pt;
+  padding: 0px;
+  z-index: 10000 !important;
+}
+.nav-link{
+  padding: 15px;
+  left: 20px !important;
+}
+.nav-link:hover {
+  box-shadow: 0 0 25px rgba(0,0,0,.8),0 0 20px rgba(255,255,255,.15) inset;
 }
 
 /* animation styles */
@@ -91,5 +165,18 @@ body{
   to {
     transform: rotateY(360deg);
     /* transform: rotateX(90deg); */
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+      -moz-transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+  }
+  100% {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
   }
 }
