@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Nav(props) {
-    return <nav className="navbar navbar-dark navbar-expand-lg fixed-top bg-dark shadow">
+    return <nav className="navbar navbar-dark navbar-expand-lg fixed-top shadow">
         <div className='container-fluid'>
             <a
                 className="navbar-brand"
