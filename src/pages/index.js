@@ -1,12 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/css/App.css';
 import logo from '../assets/logo.png';
 import bsc from '../assets/binance-smart-chain.png';
-import '../assets/css/App.css';
 import Hero from '../components/hero';
 import Nav from '../components/nav';
 import Top from '../assets/top-ix.png';
 import Bottom from '../assets/bottom-ix.png';
 import Character from '../components/character';
+import Cader from '../assets/cader.png';
 
 import champ from '../assets/characters/champ.png';
 import tribute from '../assets/characters/tribute.png';
@@ -144,6 +145,37 @@ function Index() {
                     </div>
                 </div>
             </section>
+
+            <img src={Bottom} className="img-fluid bg-bottom" />
+            <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
+
+            <section className='character-area'>
+                <div className='container'>
+
+                    <div className='row align-items-center'>
+                        <div className='col-6'>
+                            <h3 className='token-title' style={{textAlign: 'right'}}><b style={{color: "#b527a0"}}>$MEHG</b></h3>
+                            <p style={{textAlign: 'justify'}}>MEHG is powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the base crypto currency for on-chain payment and special NFT sell events, or exchanging for in-game currency MEHGT.</p>
+                        </div>
+                        <div className='col-6'>
+                            <img src={Cader} className='img-fluid' />
+                        </div>
+                    </div>
+                    {/* <hr /> */}
+                    <div className='row align-items-center'>
+                        <div className='col-6'>
+                            <img src={Cader} className='img-fluid' />
+                        </div>
+                        <div className='col-6'>
+                            <h3 className='token-title'><b style={{color: "#76a2f9"}}>$MEHGT</b></h3>
+                            <p style={{textAlign: 'justify'}}>MEHGT is a governance Token powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the online currency to play, stake and trade in the MEHG Metaverse world, it absorbs more risk and advances economic moves for MEHG gamers worldwide.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
 
             <img src={Bottom} className="img-fluid bg-bottom" />
             <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
