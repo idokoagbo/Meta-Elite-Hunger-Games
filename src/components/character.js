@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Character(props) {
-    return <div className='col'>
+    return <div className='col-md'>
         <div className="card bg-dark text-white">
             <img className="card-img character-img" src={props.img} alt="Card image" />
             <div className="card-footer">
