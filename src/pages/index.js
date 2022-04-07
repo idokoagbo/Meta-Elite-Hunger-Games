@@ -9,11 +9,15 @@ import Bottom from '../assets/bottom-ix.png';
 import Character from '../components/character';
 import Cader from '../assets/cader.png';
 
-import champ from '../assets/characters/champ.png';
-import tribute from '../assets/characters/tribute.png';
-import governor from '../assets/characters/governor.png';
-import random from '../assets/characters/d109aafc087bffb7fc80a2c607d07abf.png'
+import champ from '../assets/characters/1.png';
+import tribute from '../assets/characters/2.png';
+import governor from '../assets/characters/3.png';
+import random from '../assets/characters/4.png'
 import Partner from '../components/partner';
+
+import player from '../assets/player.png';
+
+import bgVideo from '../assets/backgrounds/bg-vid.mp4';
 
 function Index() {
 
@@ -101,18 +105,23 @@ function Index() {
             <img src={Top} className="img-fluid bg-top" />
             <header className="App-header">
                 <Hero />
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    <a className='btn btn-secondary btn-lg'>Seed Sale</a> &nbsp; <a className='btn btn-dark btn-lg'>Claim Airdrop</a>
-                </p>
-                <div className='row'>
-                    <div className='col'>
-                        <center>Designed with</center>
-                        <img src='https://raw.githubusercontent.com/idokoagbo/Meta-Elite-Hunger-Games/769421621928b651d12382e460841381120f53ea/src/assets/unity.svg' height={50} />
-                    </div>
-                    <div className='col'>
-                        <center>Powered by</center>
-                        <img src={bsc} height={50} />
+                <video autoPlay muted loop id="myVideo">
+                    <source src={bgVideo} type="video/mp4" />
+                </video>
+                <div id='myVidContent' className='text-center'>
+                    <img src={logo} className="App-logo" alt="logo" />
+                    <p>
+                        <a className='btn btn-secondary btn-lg'>Seed Sale</a> &nbsp; <a className='btn btn-dark btn-lg'>Claim Airdrop</a>
+                    </p>
+                    <div className='row'>
+                        <div className='col'>
+                            <center>Designed with</center>
+                            <img src='https://raw.githubusercontent.com/idokoagbo/Meta-Elite-Hunger-Games/769421621928b651d12382e460841381120f53ea/src/assets/unity.svg' height={50} />
+                        </div>
+                        <div className='col'>
+                            <center>Powered by</center>
+                            <img src={bsc} height={50} />
+                        </div>
                     </div>
                 </div>
             </header>
@@ -150,25 +159,25 @@ function Index() {
             <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
 
             <section className='character-area'>
-                <div className='container'>
+                <div className='container mb-5'>
 
                     <div className='row align-items-center'>
-                        <div className='col-6'>
-                            <h3 className='token-title' style={{textAlign: 'right'}}><b style={{color: "#b527a0"}}>$MEHG</b></h3>
-                            <p style={{textAlign: 'justify'}}>MEHG is powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the base crypto currency for on-chain payment and special NFT sell events, or exchanging for in-game currency MEHGT.</p>
+                        <div className='col-md-6'>
+                            <h3 className='token-title' style={{ textAlign: 'right' }}><b style={{ color: "#b527a0" }}>$MEHG</b></h3>
+                            <p style={{ textAlign: 'justify' }}>MEHG is powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the base crypto currency for on-chain payment and special NFT sell events, or exchanging for in-game currency MEHGT.</p>
                         </div>
-                        <div className='col-6'>
+                        <div className='col-md-6'>
                             <img src={Cader} className='img-fluid' />
                         </div>
                     </div>
                     {/* <hr /> */}
                     <div className='row align-items-center'>
-                        <div className='col-6'>
+                        <div className='col-md-6'>
                             <img src={Cader} className='img-fluid' />
                         </div>
-                        <div className='col-6'>
-                            <h3 className='token-title'><b style={{color: "#76a2f9"}}>$MEHGT</b></h3>
-                            <p style={{textAlign: 'justify'}}>MEHGT is a governance Token powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the online currency to play, stake and trade in the MEHG Metaverse world, it absorbs more risk and advances economic moves for MEHG gamers worldwide.</p>
+                        <div className='col-md-6'>
+                            <h3 className='token-title'><b style={{ color: "#76a2f9" }}>$MEHGT</b></h3>
+                            <p style={{ textAlign: 'justify' }}>MEHGT is a governance Token powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the online currency to play, stake and trade in the MEHG Metaverse world, it absorbs more risk and advances economic moves for MEHG gamers worldwide.</p>
                         </div>
                     </div>
 
@@ -176,9 +185,8 @@ function Index() {
 
             </section>
 
-
             <img src={Bottom} className="img-fluid bg-bottom" />
-            <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
+            <img src={Top} className="img-fluid bg-top mt-5"/>
             <section className='character-area stats'>
                 <div className='container text-center'>
                     <hr className='stats-title' />
@@ -191,7 +199,7 @@ function Index() {
                     <div className='row'>
                         <div className='col-md-3'>
                             <div className='container'>
-                                <img src='https://kryxivia.io/assets/img/knight-kryxivia.png' className='card-img' />
+                                <img src={player} className='img-fluid' />
                                 <div className='text-center'>
                                     <small>Players online</small>
                                     <h4 className="card-title text-success">N/A</h4>
