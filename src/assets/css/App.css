@@ -1,17 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
-*, body{
+*,
+body {
   padding: 0;
   margin: 0;
   font-family: 'Lato', sans-serif;
-    /* font-family: 'Rubik', sans-serif; */
-    font-weight: 400;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
+  /* font-family: 'Rubik', sans-serif; */
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
-body{
+body {
   background-image: url('../bg-2.jpg');
   background-size: cover;
 }
@@ -26,14 +28,14 @@ body{
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo, .character-img:hover {
+  .App-logo22 {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
 .App-header {
   background-color: #282c34;
-  background-image: url('../bg-main.jpg');
+  /* background-image: url('../bg-main.jpg'); */
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -46,7 +48,7 @@ body{
 
 /* my styles */
 
-.character-area{
+.character-area {
   /* background-color: #282c34; */
   min-height: 100vh;
   /* padding: 20vh; */
@@ -71,29 +73,32 @@ body{
 .App-link {
   color: #61dafb;
 }
-.bg-top{
+
+.bg-top {
   position: absolute;
   left: 0%;
   margin-top: -5%;
 }
-.bg-bottom{
+
+.bg-bottom {
   position: absolute;
   left: 0%;
   margin-top: -50vh;
 }
+
 @media screen and (max-width: 780px) {
   .bg-bottom {
     margin-top: -20vh;
   }
 }
 
-.row > .partner-img{
+.row>.partner-img {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }
 
-.partner-img{
+.partner-img {
   filter: grayscale(1);
   transition: 1s;
   padding: 10px;
@@ -108,7 +113,7 @@ body{
   object-fit: contain;
 }
 
-.partner-img:hover{
+.partner-img:hover {
   filter: grayscale(0);
   background-image: url('../bg-2.jpg');
   box-shadow: 0px 0px 5px #282c34;
@@ -116,7 +121,8 @@ body{
 }
 
 hr {
-  overflow: visible; /* For IE */
+  overflow: visible;
+  /* For IE */
   padding: 0;
   border: none;
   border-top: medium double #e25822;
@@ -124,6 +130,7 @@ hr {
   text-align: center;
   font-size: calc(10px + 2vmin);
 }
+
 hr:after {
   display: inline-block;
   position: relative;
@@ -132,23 +139,29 @@ hr:after {
   padding: 0 0.25em;
   background: url('../bg-2.jpg');
 }
-hr.partner-title:after{
+
+hr.partner-title:after {
   content: "Our partners";
 }
-hr.champ-title:after{
+
+hr.champ-title:after {
   content: "MEHG Champions";
 }
-hr.stats-title:after{
+
+hr.stats-title:after {
   content: "Game Statistics";
-}hr.about-title:after{
+}
+
+hr.about-title:after {
   content: "About MEHG";
 }
+
 /* .token-title {
   line-height: 1.1;
   font-size: calc(18px + 10 * (100vw - 320px) / 1080);
   text-transform: uppercase;
   } */
-.token-title{
+.token-title {
   font-weight: 700;
   color: #fff;
   background: linear-gradient(rgb(255, 58, 104), rgb(181, 39, 160));
@@ -163,12 +176,14 @@ hr.stats-title:after{
   padding: 0px;
   z-index: 10000 !important;
 }
-.nav-link{
+
+.nav-link {
   padding: 15px;
   left: 20px !important;
 }
+
 .nav-link:hover {
-  box-shadow: 0 0 25px rgba(0,0,0,.8),0 0 20px rgba(255,255,255,.15) inset;
+  box-shadow: 0 0 25px rgba(0, 0, 0, .8), 0 0 20px rgba(255, 255, 255, .15) inset;
 }
 
 /* animation styles */
@@ -177,6 +192,7 @@ hr.stats-title:after{
     transform: rotateY(0deg);
     /* transform: rotateX(0deg); */
   }
+
   to {
     transform: rotateY(360deg);
     /* transform: rotateX(90deg); */
@@ -185,13 +201,26 @@ hr.stats-title:after{
 
 @keyframes scroll-left {
   0% {
-      -moz-transform: translateX(0%);
-      -webkit-transform: translateX(0%);
-      transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
   }
+
   100% {
-      -moz-transform: translateX(-100%);
-      -webkit-transform: translateX(-100%);
-      transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
   }
+}
+
+
+/* #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+} */
+#myVidContent {
+  position: absolute;
 }
