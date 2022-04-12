@@ -14,9 +14,14 @@ body {
 }
 
 body {
-  background-image: url('../bg-2.jpg');
+  /* background-image: url('../bg-2.jpg'); */
+  background: rgba(0, 0, 0, 0.85);
   background-size: cover;
 }
+
+/* BankGothic
+RGB: 208, 152, 33
+Hex: #D09821 */
 
 .App {
   text-align: center;
@@ -28,8 +33,12 @@ body {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo22 {
-    animation: App-logo-spin infinite 20s linear;
+  .App-logo {
+    animation: App-logo-spin infinite 10s linear;
+  }
+
+  .token-icon {
+    animation: bounce infinite 3s linear;
   }
 }
 
@@ -77,13 +86,13 @@ body {
 .bg-top {
   position: absolute;
   left: 0%;
-  margin-top: -5%;
+  /* margin-top: -5%; */
 }
 
 .bg-bottom {
   position: absolute;
   left: 0%;
-  margin-top: -50vh;
+  margin-top: -30vh;
 }
 
 @media screen and (max-width: 780px) {
@@ -125,7 +134,7 @@ hr {
   /* For IE */
   padding: 0;
   border: none;
-  border-top: medium double #e25822;
+  border-top: medium double #D09821;
   color: #fff;
   text-align: center;
   font-size: calc(10px + 2vmin);
@@ -137,7 +146,7 @@ hr:after {
   top: -0.7em;
   font-size: 1.5em;
   padding: 0 0.25em;
-  background: url('../bg-2.jpg');
+  background: #000;
 }
 
 hr.partner-title:after {
@@ -153,7 +162,27 @@ hr.stats-title:after {
 }
 
 hr.about-title:after {
-  content: "About MEHG";
+  content: "Meta Elite Hunger Games";
+}
+
+hr.gallery-title:after {
+  content: "Gallery";
+}
+
+hr.team-title:after {
+  content: "The team";
+}
+
+hr.game-title:after {
+  content: "Game Development";
+}
+
+hr.artist-title:after {
+  content: "3D Artist / Designer";
+}
+
+hr.marketing-title:after {
+  content: "Marketing & Sound";
 }
 
 /* .token-title {
@@ -171,7 +200,7 @@ hr.about-title:after {
 }
 
 .navbar {
-  background: linear-gradient(#453643, #221C22);
+  background: linear-gradient(#D09821, #453643);
   font-size: 18pt;
   padding: 0px;
   z-index: 10000 !important;
@@ -213,6 +242,42 @@ hr.about-title:after {
   }
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-25px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.animated {
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
 
 /* #myVideo {
   position: fixed;
@@ -221,6 +286,10 @@ hr.about-title:after {
   min-width: 100%;
   min-height: 100%;
 } */
-#myVidContent {
+#myVideo {
+  opacity: 0.8;
+}
+
+.video-content {
   position: absolute;
 }
