@@ -10,6 +10,7 @@ function App() {
     <Routes>
       <Route exact path='/' element={<Index />} />
       <Route exact path='/about' element={<About />} />
+      <Route exact path='/gallery' element={<Gallery />} />
     </Routes>
   </Router>
 }
