@@ -14,9 +14,9 @@ body {
 }
 
 body {
-  /* background-image: url('../bg-2.jpg'); */
-  background: rgba(0, 0, 0, 0.85);
-  background-size: cover;
+  /* background-image: url('../backgrounds/bg-3.jpg'); */
+  /* background-color: #2c242b; */
+  background: radial-gradient(#263238, #13191c 65%);
 }
 
 /* BankGothic
@@ -34,7 +34,7 @@ Hex: #D09821 */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 10s linear;
+    animation: bounce infinite 2s linear;
   }
 
   .token-icon {
@@ -92,7 +92,7 @@ Hex: #D09821 */
 .bg-bottom {
   position: absolute;
   left: 0%;
-  margin-top: -30vh;
+  margin-top: -45vh;
 }
 
 @media screen and (max-width: 780px) {
