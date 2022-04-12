@@ -17,6 +17,7 @@ import Partner from '../components/partner';
 
 import mehgt from '../assets/mehgt.png';
 import mehg from '../assets/mehg.png';
+import mint from '../assets/mint.png';
 
 // social
 import linkedIn from '../assets/social/linkedin.png';
@@ -115,19 +116,15 @@ function Index() {
             <img src={Top} className="img-fluid bg-top" />
             <header className="App-header">
                 <Hero />
-                <video autoPlay muted loop id="myVideo">
+                <video autoPlay muted loop id="myVideo" style={{opacity: 0.7}}>
                     <source src={bgVideo} type="video/mp4" />
                 </video>
                 <div className='text-center video-content'>
                     <img src={logo} className="App-logo" alt="logo" />
                     <p>
-                        <a className='btn btn-secondary btn-lg'>Seed Sale</a> &nbsp; <a className='btn btn-dark btn-lg'>Claim Airdrop</a>
+                        <a className='btn btn-secondary btn-lg'>Seed Sale</a> &nbsp;&nbsp;&nbsp; <a className='btn btn-dark btn-lg'>Claim Airdrop</a>
                     </p>
                     <div className='row'>
-                        <div className='col'>
-                            <center>Designed with</center>
-                            <img src='https://raw.githubusercontent.com/idokoagbo/Meta-Elite-Hunger-Games/769421621928b651d12382e460841381120f53ea/src/assets/unity.svg' height={50} />
-                        </div>
                         <div className='col'>
                             <center>Powered by</center>
                             <img src={bsc} height={50} />
@@ -138,7 +135,7 @@ function Index() {
             {/* <img src={Bottom} className="img-fluid bg-bottom" /> */}
             <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
             <section className="character-area">
-                <video autoPlay muted loop style={{ opacity: 0.2 }}>
+                <video autoPlay muted loop style={{ opacity: 0.3 }}>
                     <source src={bgVideo3} type="video/mp4" />
                 </video>
                 <div className='container text-center video-content'>
@@ -178,48 +175,6 @@ function Index() {
             </section>
             <img src={Bottom} className="img-fluid bg-bottom" />
             {/* <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} /> */}
-            <section className='character-area'>
-                <div className='container'>
-                    <hr className='partner-title' />
-                    <br />
-                    <div className='row'>
-                        {
-                            partners.map((partner) => <Partner url={partner.url} img={partner.img} />)
-                        }
-                    </div>
-                </div>
-            </section>
-
-            {/* <img src={Bottom} className="img-fluid bg-bottom" /> */}
-            <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
-
-            <section className='character-area'>
-                <video autoPlay muted loop style={{ opacity: 0.2 }}>
-                    <source src={bgVideo2} type="video/mp4" />
-                </video>
-                <div className='container mb-5 video-content'>
-
-                    <div className='row align-items-center justify-content-center'>
-
-                        <div className='col-md-5'>
-                            <img src={mehg} className='img-fluid token-icon' />
-                            <h3 className='token-title'><b style={{ color: "#D09821" }}>$MEHG</b></h3>
-                            <p style={{ textAlign: 'justify' }}>MEHG is powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the base crypto currency for on-chain payment and special NFT sell events, or exchanging for in-game currency MEHGT.</p>
-                        </div>
-                        <div className='col-md-5'>
-                            <img src={mehgt} className='img-fluid token-icon' />
-                            <h3 className='token-title'><b style={{ color: "#d01c1f" }}>$MEHGT</b></h3>
-                            <p style={{ textAlign: 'justify' }}>MEHGT is a governance Token powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the online currency to play, stake and trade in the MEHG Metaverse world, it absorbs more risk and advances economic moves for MEHG gamers worldwide.</p>
-
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <img src={Bottom} className="img-fluid bg-bottom" />
-            {/* <img src={Top} className="img-fluid bg-top mt-5"/> */}
             <section className='character-area stats'>
                 <div className='container text-center'>
                     <hr className='stats-title' />
@@ -262,14 +217,55 @@ function Index() {
 
                         <div className='col-md-3'>
                             <div className='container'>
-                                <img src='https://kryxivia.io/assets/img/mineted-kryxivia.png' className='card-img' />
+                                <img src={mint} className='card-img' />
                                 <div className='text-center'>
-                                    <br /><br />
                                     <small>Meta Elite NFT Minted</small>
                                     <h4 className="card-title text-success text-bold">N/A</h4>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* <img src={Bottom} className="img-fluid bg-bottom" /> */}
+            <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
+
+            <section className='character-area'>
+                <video autoPlay muted loop style={{ opacity: 0.5 }}>
+                    <source src={bgVideo2} type="video/mp4" />
+                </video>
+                <div className='container mb-5 video-content'>
+
+                    <div className='row align-items-center justify-content-center'>
+
+                        <div className='col-md-5'>
+                            <img src={mehg} className='img-fluid token-icon' />
+                            <h3 className='token-title'><b style={{ color: "#D09821" }}>$MEHG</b></h3>
+                            <p style={{ textAlign: 'justify' }}>MEHG is powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the base crypto currency for on-chain payment and special NFT sell events, or exchanging for in-game currency MEHGT.</p>
+                        </div>
+                        <div className='col-md-5'>
+                            <img src={mehgt} className='img-fluid token-icon' />
+                            <h3 className='token-title'><b style={{ color: "#d01c1f" }}>$MEHGT</b></h3>
+                            <p style={{ textAlign: 'justify' }}>MEHGT is a governance Token powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the online currency to play, stake and trade in the MEHG Metaverse world, it absorbs more risk and advances economic moves for MEHG gamers worldwide.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <img src={Bottom} className="img-fluid bg-bottom" />
+            {/* <img src={Top} className="img-fluid bg-top mt-5"/> */}
+            <section className='character-area'>
+                <div className='container'>
+                    <hr className='partner-title' />
+                    <br />
+                    <div className='row'>
+                        {
+                            partners.map((partner) => <Partner url={partner.url} img={partner.img} />)
+                        }
                     </div>
                 </div>
             </section>
