@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import whitepaper from '../assets/whitepaper.pdf';
 
 function Nav(props) {
     return <nav className="navbar navbar-dark navbar-expand-lg fixed-top shadow">
@@ -30,7 +31,7 @@ function Nav(props) {
                         <a className="nav-link" href="/gallery">Gallery</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/whitepaper">Whitepaper</a>
+                        <a className="nav-link" target="_blank" href={whitepaper}>Whitepaper</a>
                     </li>
 
                 </ul>
