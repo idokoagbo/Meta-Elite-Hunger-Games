@@ -89,7 +89,7 @@ function About() {
                     </div>
                     <div className='col-md-3 text-center'>
                         <img src={g2} className='img-fluid' />
-                        <h3 className='token-title mb-3'><b style={{ color: "#D09821" }}>Brent Washington - Unity 3D Developer/Web Developer</b></h3>
+                        <h3 className='token-title mb-3'><b style={{ color: "#D09821" }}>Brent Washington - 3D Developer/Web Developer</b></h3>
                     </div>
                     <div className='col-md-3 text-center'>
                         <img src={g3} className='img-fluid' />
