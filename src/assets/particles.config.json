@@ -60,17 +60,17 @@
                 "enable": true,
                 "area": 1500
             },
-            "value": 75
+            "value": 105
         },
         "opacity": {
             "value": 0.8
         },
         "shape": {
-            "type": "circle"
+            "type": "triangle"
         },
         "size": {
             "random": true,
-            "value": 3
+            "value": 5
         }
     },
     "detectRetina": true
