@@ -5,6 +5,7 @@ import logo from '../assets/logo.png';
 import Top from '../assets/backgrounds/top.png';
 import Bottom from '../assets/backgrounds/bottom.png';
 import Hero from '../components/hero';
+import Player from '../components/soundtrack';
 
 //team photos
 
@@ -129,9 +130,10 @@ function About() {
                     </div>
                 </div>
             </div>
-
+            <Player url="https://file-examples.com/storage/fe31d99e526255e059c5846/2017/11/file_example_MP3_700KB.mp3" />
 
         </section>
+        
         <img src={Bottom} className="img-fluid bg-bottom" />
     </>;
 }
