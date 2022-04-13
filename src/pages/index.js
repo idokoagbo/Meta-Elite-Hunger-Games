@@ -154,7 +154,7 @@ function Index() {
                     </div>
                 </header>
                 <Player url="https://file-examples.com/storage/fe31d99e526255e059c5846/2017/11/file_example_MP3_700KB.mp3" />
-                {/* <img src={Bottom} className="img-fluid bg-bottom" /> */}
+                <img src={Bottom} className="img-fluid bg-bottom" />
                 <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
                 <section className="character-area">
                     <video autoPlay muted loop style={{ opacity: 0.3 }}>
@@ -184,7 +184,7 @@ function Index() {
                     </div>
                 </section>
                 <img src={Bottom} className="img-fluid bg-bottom" />
-                {/* <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} /> */}
+                <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
                 <section className='character-area stats'>
                     <div className='container text-center'>
                         <p><br/><br/><br/><br/></p>
@@ -273,17 +273,17 @@ function Index() {
                     </div>
                 </section>
 
-                {/* <img src={Bottom} className="img-fluid bg-bottom" /> */}
+                <img src={Bottom} className="img-fluid bg-bottom" />
                 <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
 
                 <section className='character-area'>
+                    
                     <video autoPlay muted loop style={{ opacity: 0.5 }}>
                         <source src={bgVideo2} type="video/mp4" />
                     </video>
                     <div className='container mb-5 video-content'>
 
                         <div className='row align-items-center justify-content-center'>
-
                             <div className='col-md-5'>
                                 <img src={mehg} className='img-fluid token-icon' />
                                 <h3 className='token-title'><b style={{ color: "#D09821" }}>$MEHG</b></h3>
@@ -302,7 +302,7 @@ function Index() {
                 </section>
 
                 <img src={Bottom} className="img-fluid bg-bottom" />
-                {/* <img src={Top} className="img-fluid bg-top mt-5"/> */}
+                <img src={Top} className="img-fluid bg-top mt-5"/>
                 <section className='character-area'>
                     <div className='container'>
                         <hr className='partner-title' />
