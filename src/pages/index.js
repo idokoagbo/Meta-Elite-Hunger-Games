@@ -40,6 +40,7 @@ import stat3 from '../assets/stats/3.png';
 import stat4 from '../assets/stats/4.png';
 import stat5 from '../assets/stats/5.png';
 import stat6 from '../assets/stats/6.png';
+import Player from '../components/soundtrack';
 
 function Index() {
 
@@ -136,7 +137,7 @@ function Index() {
                 <img src={Top} className="img-fluid bg-top" />
                 <header className="App-header">
                     <Hero />
-                    <video autoPlay muted loop id="myVideo" style={{ opacity: 0.7 }}>
+                    <video autoPlay muted loop id="myVideo" style={{ opacity: 0.7 }} playsInline>
                         <source src={bgVideo} type="video/mp4" />
                     </video>
                     <div className='text-center video-content'>
@@ -152,6 +153,7 @@ function Index() {
                         </div>
                     </div>
                 </header>
+                <Player url="https://file-examples.com/storage/fe31d99e526255e059c5846/2017/11/file_example_MP3_700KB.mp3" />
                 {/* <img src={Bottom} className="img-fluid bg-bottom" /> */}
                 <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
                 <section className="character-area">
@@ -166,24 +168,12 @@ function Index() {
                                 <Carousel indicators={false}>
                                     {
                                         characters.map((character, index) => {
-                                            return <Carousel.Item>
+                                            return <Carousel.Item key={index}>
                                                 <img src={character.img} className="d-block w-100" alt={character.title} />
                                             </Carousel.Item>;
                                         })
                                     }
                                 </Carousel>
-                                {/* <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
-                                <div className="carousel-inner">
-                                    {
-                                        characters.map((character, key) => <div className="carousel-item active">
-                                            <img className="d-block w-100" src={character.img} alt={character.title} />
-                                        </div>)
-                                    }
-                                </div>
-                            </div> */}
-                                {/* {
-                                characters.map((character) => <Character title={character.title} img={character.img} />)
-                            } */}
                             </div>
 
                             <div className='col-md-8'>
@@ -197,6 +187,7 @@ function Index() {
                 {/* <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} /> */}
                 <section className='character-area stats'>
                     <div className='container text-center'>
+                        <p><br/><br/><br/><br/></p>
                         <hr className='stats-title' />
                         <br />
                         <p>An AAA gaming experience with cinematic quality 3D special effects in an interactive open-world RPG built in DeFi.</p>
@@ -205,9 +196,10 @@ function Index() {
                         <hr />
 
                         <div className='row align-items-center'>
-                            <div className='col-md'>
+
+                        <div className='col-md'>
                                 <div className='container'>
-                                    <img src={stat1} className='card-img' />
+                                    <img src={player} className='card-img' />
                                     <div className='text-center'>
                                         <small>Players online</small>
                                         <h4 className="card-title text-bold" style={{ color: "#D09821" }}>N/A</h4>
@@ -217,7 +209,7 @@ function Index() {
 
                             <div className='col-md'>
                                 <div className='container'>
-                                    <img src={stat2} className='card-img' />
+                                    <img src={mehg} className='card-img' />
                                     <div className='text-center'>
                                         <small>Market cap</small>
                                         <h4 className="card-title text-bold" style={{ color: "#D09821" }}>N/A</h4>
@@ -227,7 +219,7 @@ function Index() {
 
                             <div className='col-md'>
                                 <div className='container'>
-                                    <img src={stat3} className='card-img' />
+                                    <img src={mehgt} className='card-img' />
                                     <div className='text-center'>
                                         <small>Governance</small>
                                         <h4 className="card-title text-bold" style={{ color: "#D09821" }}>N/A</h4>
@@ -244,6 +236,9 @@ function Index() {
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div className='row'>
+                            
 
                             <div className='col-md'>
                                 <div className='container'>
@@ -314,7 +309,7 @@ function Index() {
                         <br />
                         <div className='row'>
                             {
-                                partners.map((partner) => <Partner url={partner.url} img={partner.img} />)
+                                partners.map((partner, index) => <Partner key={index} url={partner.url} img={partner.img} />)
                             }
                         </div>
                     </div>
