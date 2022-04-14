@@ -282,12 +282,12 @@ function Index() {
 
                 <section className='character-area mb-5'>
 
-                    <video autoPlay muted loop style={{ opacity: 0.1 }}>
+                    <video autoPlay muted loop style={{ opacity: 0.1, position:'absolute' }}>
                         <source src={bgVideo2} type="video/mp4" />
                     </video>
-                    <div className='container video-content'>
+                    <div className='container'>
 
-                        <div className='row align-items-bottom justify-content-center mt-5'>
+                        <div className='row align-items-bottom justify-content-center'>
                             <div className='col-md-5'>
                                 <div className='text-center'>
                                     <img src={polygon} className='img-fluid polygon-border d-none d-md-inline' />
