@@ -216,7 +216,9 @@ hr.marketing-title:after {
 }
 
 .nav-link:hover {
-  box-shadow: 0 0 25px rgba(0, 0, 0, .8), 0 0 20px rgba(255, 255, 255, .15) inset;
+  background-image: url('../bg-2.jpg');
+  box-shadow: 0px 0px 5px #282c34;
+  /* box-shadow: 0 0 25px rgba(0, 0, 0, .8), 0 0 20px rgba(255, 255, 255, .15) inset; */
 }
 
 /* animation styles */
