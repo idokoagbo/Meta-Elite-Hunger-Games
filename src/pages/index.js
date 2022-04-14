@@ -138,7 +138,7 @@ function Index() {
             <div className="container-fluid">
                 <Nav logo={logo} />
                 <img src={Top} className="img-fluid bg-top" />
-                <YoutubeBackground videoId={"4P5aJahaqoI"} className="videoBackground" overlay={"rgba(0,0,0,.5)"} nocookie={true} playerOptions={{ autoplay: 1, loop: 1 }}>
+                <YoutubeBackground videoId={"4P5aJahaqoI"} className="" overlay={"rgba(0,0,0,.4)"} nocookie={true} >
                     <header className="App-header">
                         <Hero />
                         <div className='text-center'>
