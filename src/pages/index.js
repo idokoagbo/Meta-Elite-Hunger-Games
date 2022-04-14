@@ -132,7 +132,7 @@ function Index() {
 
     return (
         isLoaded ?
-            <div className="">
+            <div className="container-fluid">
                 <Nav logo={logo} />
                 <img src={Top} className="img-fluid bg-top" />
                 <header className="App-header">
@@ -155,7 +155,7 @@ function Index() {
                 </header>
                 <Player url="https://file-examples.com/storage/fe31d99e526255e059c5846/2017/11/file_example_MP3_700KB.mp3" />
                 <img src={Bottom} className="img-fluid bg-bottom" />
-                <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
+                <img src={Top} className="img-fluid bg-top" />
                 <section className="character-area">
                     <video autoPlay muted loop style={{ opacity: 0.3 }}>
                         <source src={bgVideo3} type="video/mp4" />
@@ -184,7 +184,7 @@ function Index() {
                     </div>
                 </section>
                 <img src={Bottom} className="img-fluid bg-bottom" />
-                <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
+                <img src={Top} className="img-fluid bg-top" />
                 <section className='character-area stats'>
                     <div className='container text-center mb-5 mt-5'>
                         
@@ -274,7 +274,7 @@ function Index() {
                 </section>
 
                 <img src={Bottom} className="img-fluid bg-bottom" />
-                <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
+                <img src={Top} className="img-fluid bg-top" />
 
                 <section className='character-area mb-5'>
 
@@ -290,7 +290,7 @@ function Index() {
                                     <img src={mehgtkn} className='img-fluid token-icon' />
                                 </div>
 
-                                <h3 className='token-title' style={{ marginTop: '100px' }}><b style={{ color: "#D09821" }}>$MEHG</b></h3>
+                                <h3 className='token-title' style={{ marginTop: '120px' }}><b style={{ color: "#D09821" }}>$MEHG</b></h3>
                                 <p style={{ textAlign: 'justify' }}>MEHG is powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the base crypto currency for on-chain payment and special NFT sell events, or exchanging for in-game currency MEHGT.</p>
                             </div>
                             <div className='col-md-5'>
@@ -299,7 +299,7 @@ function Index() {
                                     <img src={mehgttkn} className='img-fluid token-icon' />
                                 </div>
 
-                                <h3 className='token-title' style={{ marginTop: '100px' }}><b style={{ color: "#d01c1f" }}>$MEHGT</b></h3>
+                                <h3 className='token-title' style={{ marginTop: '120px' }}><b style={{ color: "#d01c1f" }}>$MEHGT</b></h3>
                                 <p style={{ textAlign: 'justify' }}>MEHGT is a governance Token powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the online currency to play, stake and trade in the MEHG Metaverse world, it absorbs more risk and advances economic moves for MEHG gamers worldwide.</p>
 
                             </div>

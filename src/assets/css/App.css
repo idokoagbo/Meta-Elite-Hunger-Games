@@ -87,7 +87,7 @@ Hex: #D09821 */
 .bg-top {
   position: absolute;
   left: 0%;
-  /* margin-top: -5%; */
+  margin-top: -5vh;
 }
 
 .bg-bottom {
@@ -297,14 +297,14 @@ hr.marketing-title:after {
 
 .polygon-border {
   width: 65%;
-  margin-left: -310px;
+  margin-left: -35%;
   position: absolute;
 }
 
 .token-icon {
   height: 200px;
   margin-top: 100px;
-  margin-left: -25px;
+  margin-left: -25%;
 }
 
 @media only screen and (max-width: 600px) {
