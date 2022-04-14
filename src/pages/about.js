@@ -35,7 +35,7 @@ function About() {
             <div className='container'>
                 <hr className='about-title' />
                 <br />
-                <p>Inspired by the first major COVID-19 outbreak Lockdown, the struggle for survival in the Ukraine/Russian war and the fight survival in most parts of Africa, India and Asia, the Meta Elite Hunger Games is a Metaverse Game-Fi P2E project that gives you an AAA gaming experience with no limits to achievable rewards.</p>
+                <p>Inspired by the first major COVID-19 outbreak Lockdown, the struggle for survival in most parts of Africa, India and Asia, the Meta Elite Hunger Games is a Metaverse Game-Fi P2E project that gives you an AAA gaming experience with no limits to achievable rewards.</p>
                 <br /><br />
                 <hr className='team-title' />
                 <p><br /></p>
