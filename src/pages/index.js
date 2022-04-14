@@ -18,6 +18,7 @@ import Partner from '../components/partner';
 
 import mehgt from '../assets/mehgt.png';
 import mehg from '../assets/mehg.png';
+import polygon from '../assets/polygon.png';
 import mint from '../assets/mint.png';
 
 import Loader from '../assets/loader.gif';
@@ -33,10 +34,9 @@ import bgVideo from '../assets/backgrounds/bg-vid.mp4';
 import bgVideo2 from '../assets/backgrounds/bg-vid2.mp4';
 import bgVideo3 from '../assets/backgrounds/bg-vid3.mp4';
 
+import mehgtkn from '../assets/mehg-tkn.png';
+import mehgttkn from '../assets/mehgt-tkn.png';
 // stats
-import stat1 from '../assets/stats/1.png';
-import stat2 from '../assets/stats/2.png';
-import stat3 from '../assets/stats/3.png';
 import stat4 from '../assets/stats/4.png';
 import stat5 from '../assets/stats/5.png';
 import stat6 from '../assets/stats/6.png';
@@ -186,8 +186,8 @@ function Index() {
                 <img src={Bottom} className="img-fluid bg-bottom" />
                 <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
                 <section className='character-area stats'>
-                    <div className='container text-center'>
-                        <p><br/><br/><br/><br/></p>
+                    <div className='container text-center mb-5 mt-5'>
+                        
                         <hr className='stats-title' />
                         <br />
                         <p>An AAA gaming experience with cinematic quality 3D special effects in an interactive open-world RPG built in DeFi.</p>
@@ -197,7 +197,7 @@ function Index() {
 
                         <div className='row align-items-center'>
 
-                        <div className='col-md'>
+                            <div className='col-md'>
                                 <div className='container'>
                                     <img src={player} className='card-img' />
                                     <div className='text-center'>
@@ -238,7 +238,7 @@ function Index() {
                             </div>
                         </div>
                         <div className='row'>
-                            
+
 
                             <div className='col-md'>
                                 <div className='container'>
@@ -276,22 +276,30 @@ function Index() {
                 <img src={Bottom} className="img-fluid bg-bottom" />
                 <img src={Top} className="img-fluid bg-top" style={{ marginTop: 5 }} />
 
-                <section className='character-area'>
-                    
-                    <video autoPlay muted loop style={{ opacity: 0.5 }}>
+                <section className='character-area mb-5'>
+
+                    <video autoPlay muted loop style={{ opacity: 0.1 }}>
                         <source src={bgVideo2} type="video/mp4" />
                     </video>
-                    <div className='container mb-5 video-content'>
+                    <div className='container video-content'>
 
-                        <div className='row align-items-center justify-content-center'>
+                        <div className='row align-items-bottom justify-content-center mt-5'>
                             <div className='col-md-5'>
-                                <img src={mehg} className='img-fluid token-icon' />
-                                <h3 className='token-title'><b style={{ color: "#D09821" }}>$MEHG</b></h3>
+                                <div className='text-center'>
+                                    <img src={polygon} className='img-fluid polygon-border d-none d-md-inline' />
+                                    <img src={mehgtkn} className='img-fluid token-icon' />
+                                </div>
+
+                                <h3 className='token-title' style={{ marginTop: '100px' }}><b style={{ color: "#D09821" }}>$MEHG</b></h3>
                                 <p style={{ textAlign: 'justify' }}>MEHG is powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the base crypto currency for on-chain payment and special NFT sell events, or exchanging for in-game currency MEHGT.</p>
                             </div>
                             <div className='col-md-5'>
-                                <img src={mehgt} className='img-fluid token-icon' />
-                                <h3 className='token-title'><b style={{ color: "#d01c1f" }}>$MEHGT</b></h3>
+                                <div className='text-center'>
+                                    <img src={polygon} className='img-fluid polygon-border d-none d-md-inline' />
+                                    <img src={mehgttkn} className='img-fluid token-icon' />
+                                </div>
+
+                                <h3 className='token-title' style={{ marginTop: '100px' }}><b style={{ color: "#d01c1f" }}>$MEHGT</b></h3>
                                 <p style={{ textAlign: 'justify' }}>MEHGT is a governance Token powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the online currency to play, stake and trade in the MEHG Metaverse world, it absorbs more risk and advances economic moves for MEHG gamers worldwide.</p>
 
                             </div>
@@ -302,9 +310,9 @@ function Index() {
                 </section>
 
                 <img src={Bottom} className="img-fluid bg-bottom" />
-                <img src={Top} className="img-fluid bg-top mt-5"/>
+                <img src={Top} className="img-fluid bg-top" />
                 <section className='character-area'>
-                    <div className='container'>
+                    <div className='container mt-5'>
                         <hr className='partner-title' />
                         <br />
                         <div className='row'>
