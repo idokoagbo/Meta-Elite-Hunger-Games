@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import YoutubeBackground from 'react-youtube-background'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/App.css';
 import logo from '../assets/logo.png';
@@ -9,6 +10,7 @@ import Top from '../assets/backgrounds/top.png';
 import Bottom from '../assets/backgrounds/bottom.png';
 import Character from '../components/character';
 import Carousel from 'react-bootstrap/Carousel'
+
 
 import champ from '../assets/characters/1.png';
 import tribute from '../assets/characters/2.png';
@@ -30,7 +32,6 @@ import facebook from '../assets/social/facebook.png';
 
 import player from '../assets/players.png';
 
-import bgVideo from '../assets/backgrounds/bg-vid.mp4';
 import bgVideo2 from '../assets/backgrounds/bg-vid2.mp4';
 import bgVideo3 from '../assets/backgrounds/bg-vid3.mp4';
 
@@ -41,6 +42,8 @@ import stat4 from '../assets/stats/4.png';
 import stat5 from '../assets/stats/5.png';
 import stat6 from '../assets/stats/6.png';
 import Player from '../components/soundtrack';
+
+
 
 function Index() {
 
@@ -135,25 +138,26 @@ function Index() {
             <div className="container-fluid">
                 <Nav logo={logo} />
                 <img src={Top} className="img-fluid bg-top" />
-                <header className="App-header">
-                    <Hero />
-                    <video autoPlay muted loop id="myVideo" style={{ opacity: 0.7 }} playsInline>
-                        <source src={bgVideo} type="video/mp4" />
-                    </video>
-                    <div className='text-center video-content'>
-                        <img src={logo} className="App-logo" alt="logo" />
-                        <p>
-                            <a className='btn btn-secondary btn-lg'>Seed Sale</a> &nbsp;&nbsp;&nbsp; <a className='btn btn-dark btn-lg'>Claim Airdrop</a>
-                        </p>
-                        <div className='row'>
-                            <div className='col'>
-                                <center>Powered by</center>
-                                <img src={bsc} height={50} />
+                <YoutubeBackground videoId={"4P5aJahaqoI"} className="videoBackground" overlay={"rgba(0,0,0,.5)"} nocookie={true} playerOptions={{ autoplay: 1, loop: 1 }}>
+                    <header className="App-header">
+                        <Hero />
+                        <div className='text-center'>
+                            <img src={logo} className="App-logo" alt="logo" />
+                            <p>
+                                <a className='btn btn-secondary btn-lg'>Seed Sale</a> &nbsp;&nbsp;&nbsp; <a className='btn btn-dark btn-lg'>Claim Airdrop</a>
+                            </p>
+                            <div className='row'>
+                                <div className='col'>
+                                    <center>Powered by</center>
+                                    <img src={bsc} height={50} />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </header>
-                <Player url="https://file-examples.com/storage/fe31d99e526255e059c5846/2017/11/file_example_MP3_700KB.mp3" />
+
+
+                    </header>
+                </YoutubeBackground>
+                <Player />
                 <img src={Bottom} className="img-fluid bg-bottom" />
                 <img src={Top} className="img-fluid bg-top" />
                 <section className="character-area">
@@ -187,7 +191,7 @@ function Index() {
                 <img src={Top} className="img-fluid bg-top" />
                 <section className='character-area stats'>
                     <div className='container text-center mb-5 mt-5'>
-                        
+
                         <hr className='stats-title' />
                         <br />
                         <p>An AAA gaming experience with cinematic quality 3D special effects in an interactive open-world RPG built in DeFi.</p>
@@ -361,7 +365,7 @@ function Index() {
                 </footer>
             </div>
             :
-            <div className='App-header' style={{ backgroundColor: '#000 !important' }}> <img src={Loader} className="img-fluid" /></div>
+            <div className='App-header2' style={{ backgroundColor: '#000 !important' }}> <img src={Loader} className="img-fluid" /></div>
     );
 }
 
