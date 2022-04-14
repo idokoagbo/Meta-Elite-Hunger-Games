@@ -69,7 +69,7 @@ function Gallery() {
         <Nav logo={logo} />
         <img src={Top} className="img-fluid bg-top" />
         <section className='character-area mb-5'>
-            <div className='container text-center'>
+            <div className='container text-center mt-5'>
                 <hr className='gallery-title' />
 
                 <div className='row mt-5'>
