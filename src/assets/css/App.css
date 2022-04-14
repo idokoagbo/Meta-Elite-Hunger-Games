@@ -46,6 +46,19 @@ Hex: #D09821 */
 }
 
 .App-header {
+  /* background-color: #000; */
+  /* background-image: url('../bg-main.jpg'); */
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: white;
+}
+
+.App-header2 {
   background-color: #000;
   /* background-image: url('../bg-main.jpg'); */
   background-size: cover;
@@ -296,8 +309,14 @@ hr.marketing-title:after {
   opacity: 0.8;
 }
 
+.videoBackground {
+  z-index: 1;
+  object-fit: cover;
+}
+
 .video-content {
   position: absolute;
+  min-width: 500px;
 }
 
 .polygon-border {
