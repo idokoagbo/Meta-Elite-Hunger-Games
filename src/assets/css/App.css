@@ -75,7 +75,7 @@ Hex: #D09821 */
 
 .character-area {
   /* background-color: #282c34; */
-  /* min-height: 100vh; */
+  min-height: 100vh;
   overflow-y: hidden;
   /* padding: 20vh; */
   display: flex;
@@ -318,7 +318,14 @@ hr.marketing-title:after {
   position: absolute;
 }
 
-.polygon-border {
+.bg-polygon{
+  background-image: url('../backgrounds/polygon2.png');
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* .polygon-border {
   width: 65%;
   margin-left: -35%;
   position: absolute;
@@ -336,4 +343,4 @@ hr.marketing-title:after {
     margin-top: 100px;
     margin-left: 0px;
   }
-}
+} */
