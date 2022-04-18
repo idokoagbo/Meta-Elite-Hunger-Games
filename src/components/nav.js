@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from '../assets/logo1.png';
 import whitepaper from '../assets/whitepaper.pdf';
 
 function Nav(props) {
@@ -9,9 +10,7 @@ function Nav(props) {
                 href="/"
                 rel="noopener noreferrer"
             >
-                <img src={props.logo} height={50} className="d-inline-block align-top" alt='brand-logo' />
-                <span style={{ fontSize: '24px', fontWeight: '700', lineHeight: '46px' }} className='d-none d-md-inline'> Meta Elite Hunger Games </span>
-                <span style={{ fontSize: '24px', fontWeight: '700', lineHeight: '46px' }} className='d-inline d-md-none'> MEHG </span>
+                <img src={logo} height={50} className="d-inline-block align-top" alt='brand-logo' />
             </a>
 
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
