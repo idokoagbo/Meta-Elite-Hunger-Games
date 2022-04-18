@@ -7,8 +7,7 @@ import bsc from '../assets/binance-smart-chain.png';
 import Hero from '../components/hero';
 import Nav from '../components/nav';
 import Top from '../assets/backgrounds/top.png';
-import Bottom from '../assets/backgrounds/bottom.png';
-import Character from '../components/character';
+import Bottom from '../assets/backgrounds/bottom-corrected.png';
 import Carousel from 'react-bootstrap/Carousel'
 
 
@@ -20,7 +19,6 @@ import Partner from '../components/partner';
 
 import mehgt from '../assets/mehgt.png';
 import mehg from '../assets/mehg.png';
-import polygon from '../assets/polygon.png';
 import mint from '../assets/mint.png';
 
 import Loader from '../assets/loader.gif';
@@ -35,8 +33,8 @@ import player from '../assets/players.png';
 import bgVideo2 from '../assets/backgrounds/bg-vid2.mp4';
 import bgVideo3 from '../assets/backgrounds/bg-vid3.mp4';
 
-import mehgtkn from '../assets/mehg-tkn.png';
-import mehgttkn from '../assets/mehgt-tkn.png';
+import mehgtkn from '../assets/axe2.png';
+import mehgttkn from '../assets/axe1.png';
 // stats
 import stat4 from '../assets/stats/4.png';
 import stat5 from '../assets/stats/5.png';
@@ -130,12 +128,12 @@ function Index() {
     useEffect(() => {
         setTimeout(() => {
             setIsLoaded(true);
-        }, 8000);
+        }, 16000);
     }, []);
 
     return (
         isLoaded ?
-            <div className="container-fluid">
+            <div className="container">
                 <Nav logo={logo} />
                 <img src={Top} className="img-fluid bg-top" />
                 <YoutubeBackground videoId={"4P5aJahaqoI"} className="" overlay={"rgba(0,0,0,.4)"} nocookie={true} >
@@ -168,19 +166,19 @@ function Index() {
                         <hr className='champ-title' />
                         <br />
                         <div className='row align-items-center'>
-                            <div className='col-md-4'>
-                                <Carousel indicators={false}>
+                            <div className='col-md-4 animate__animated animate__fadeInLeft animate__delay-2s'>
+                                <Carousel indicators={false} controls={false}>
                                     {
                                         characters.map((character, index) => {
                                             return <Carousel.Item key={index}>
-                                                <img src={character.img} className="d-block w-100" alt={character.title} />
+                                                <img src={character.img} className="d-block w-100" style={{ borderRadius: "360px" }} alt={character.title} />
                                             </Carousel.Item>;
                                         })
                                     }
                                 </Carousel>
                             </div>
 
-                            <div className='col-md-8'>
+                            <div className='col-md-8 animate__animated animate__fadeInRight animate__delay-3s'>
                                 <p>At first there was nothing and then we had MetaElite Hunger Games. By taking on the role of a MEHG champion you start you journey on Meta planet where you have to fend for yourself, mine weapons and amour along with other useful items you come across. </p>
                                 <p>You then begin your travels across a land of beauty and carfully maneuvering your way past natural hazards and bandits. You will see different people, cultures and tribes, discovering a world beyond your wildest imaginations.</p>
                             </div>
@@ -194,8 +192,8 @@ function Index() {
 
                         <hr className='stats-title' />
                         <br />
-                        <p>An AAA gaming experience with cinematic quality 3D special effects in an interactive open-world RPG built in DeFi.</p>
-                        <p>MetaElite Hunger Games merges gaming and cryptocurrency in a unique synergy and, a fully decentralized protocol, Meta Elite Hunger Games represents a new age in gaming.</p>
+                        <p className='animate__animated animate__fadeInLeft animate__delay-4s'>An AAA gaming experience with cinematic quality 3D special effects in an interactive open-world RPG built in DeFi.</p>
+                        <p className='animate__animated animate__fadeInRight animate__delay-5s'>MetaElite Hunger Games merges gaming and cryptocurrency in a unique synergy and, a fully decentralized protocol, Meta Elite Hunger Games represents a new age in gaming.</p>
 
                         <hr />
 
@@ -282,29 +280,27 @@ function Index() {
 
                 <section className='character-area mb-5'>
 
-                    <video autoPlay muted loop style={{ opacity: 0.1, position:'absolute' }}>
+                    <video autoPlay muted loop style={{ opacity: 0.1, position: 'absolute' }}>
                         <source src={bgVideo2} type="video/mp4" />
                     </video>
                     <div className='container'>
 
                         <div className='row align-items-bottom justify-content-center'>
                             <div className='col-md-5'>
-                                <div className='text-center'>
-                                    <img src={polygon} className='img-fluid polygon-border d-none d-md-inline' />
+                                <div className='text-center bg-polygon mb-3'>
                                     <img src={mehgtkn} className='img-fluid token-icon' />
                                 </div>
 
-                                <h3 className='token-title' style={{ marginTop: '120px' }}><b style={{ color: "#D09821" }}>$MEHG</b></h3>
-                                <p style={{ textAlign: 'justify' }}>MEHG is powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the base crypto currency for on-chain payment and special NFT sell events, or exchanging for in-game currency MEHGT.</p>
+                                <h3 className='token-title animate__animated animate__bounce animate__delay-3s'><b style={{ color: "#D09821" }}>$MEHG</b></h3>
+                                <p style={{ textAlign: 'justify' }} className="animate__animated animate__bounce animate__delay-4s">MEHG is powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the base crypto currency for on-chain payment and special NFT sell events, or exchanging for in-game currency MEHGT.</p>
                             </div>
                             <div className='col-md-5'>
-                                <div className='text-center'>
-                                    <img src={polygon} className='img-fluid polygon-border d-none d-md-inline' />
+                                <div className='text-center bg-polygon mb-3'>
                                     <img src={mehgttkn} className='img-fluid token-icon' />
                                 </div>
 
-                                <h3 className='token-title' style={{ marginTop: '120px' }}><b style={{ color: "#d01c1f" }}>$MEHGT</b></h3>
-                                <p style={{ textAlign: 'justify' }}>MEHGT is a governance Token powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the online currency to play, stake and trade in the MEHG Metaverse world, it absorbs more risk and advances economic moves for MEHG gamers worldwide.</p>
+                                <h3 className='token-title animate__animated animate__bounce animate__delay-3s'><b style={{ color: "#d01c1f" }}>$MEHGT</b></h3>
+                                <p style={{ textAlign: 'justify' }} className="animate__animated animate__bounce animate__delay-4s">MEHGT is a governance Token powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the online currency to play, stake and trade in the MEHG Metaverse world, it absorbs more risk and advances economic moves for MEHG gamers worldwide.</p>
 
                             </div>
                         </div>
