@@ -6,7 +6,7 @@ import logo from '../assets/logo.png';
 import bsc from '../assets/binance-smart-chain.png';
 import Hero from '../components/hero';
 import Nav from '../components/nav';
-import Top from '../assets/backgrounds/top.png';
+import Top from '../assets/backgrounds/top-corrected.png';
 import Bottom from '../assets/backgrounds/bottom-corrected.png';
 import Carousel from 'react-bootstrap/Carousel'
 
@@ -285,7 +285,7 @@ function Index() {
                     </video>
                     <div className='container'>
 
-                        <div className='row align-items-bottom justify-content-center'>
+                        <div className='row align-items-bottom '>
                             <div className='col-md-5'>
                                 <div className='text-center bg-polygon mb-3'>
                                     <img src={mehgtkn} className='img-fluid token-icon' />
@@ -294,6 +294,7 @@ function Index() {
                                 <h3 className='token-title animate__animated animate__bounce animate__delay-3s'><b style={{ color: "#D09821" }}>$MEHG</b></h3>
                                 <p style={{ textAlign: 'justify' }} className="animate__animated animate__bounce animate__delay-4s">MEHG is powered by the Binance Smart Chain (BSC) and the Inter-Planetary File System which is the base crypto currency for on-chain payment and special NFT sell events, or exchanging for in-game currency MEHGT.</p>
                             </div>
+                            <div className='col-md-2'></div>
                             <div className='col-md-5'>
                                 <div className='text-center bg-polygon mb-3'>
                                     <img src={mehgttkn} className='img-fluid token-icon' />
