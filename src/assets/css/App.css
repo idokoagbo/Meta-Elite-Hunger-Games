@@ -103,13 +103,13 @@ Hex: #D09821 */
 .bg-top {
   position: absolute;
   left: 0%;
-  margin-top: 0vh;
+  margin-top: -2vh;
 }
 
 .bg-bottom {
   position: absolute;
   left: 0%;
-  margin-top: -55vh;
+  margin-top: -50vh;
 }
 
 @media screen and (max-width: 780px) {
