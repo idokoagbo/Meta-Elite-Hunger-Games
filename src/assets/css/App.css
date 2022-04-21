@@ -146,6 +146,16 @@ Hex: #D09821 */
   cursor: pointer;
 }
 
+.social-img {
+  filter: grayscale(1);
+  transition: 1s;
+}
+
+.social-img:hover {
+  filter: grayscale(0);
+  transition: 1s;
+}
+
 hr {
   overflow: visible;
   /* For IE */
@@ -318,7 +328,7 @@ hr.marketing-title:after {
   position: absolute;
 }
 
-.bg-polygon{
+.bg-polygon {
   background-image: url('../backgrounds/polygon2.png');
   background-position: center;
   background-size: cover;
