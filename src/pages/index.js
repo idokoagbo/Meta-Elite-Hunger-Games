@@ -8,7 +8,7 @@ import Hero from '../components/hero';
 import Nav from '../components/nav';
 import Top from '../assets/backgrounds/top-corrected.png';
 import Bottom from '../assets/backgrounds/bottom-corrected.png';
-import Carousel from 'react-bootstrap/Carousel'
+import Carousel from 'react-bootstrap/Carousel';
 
 
 import champ from '../assets/characters/1.png';
@@ -24,9 +24,11 @@ import mint from '../assets/mint.png';
 import Loader from '../assets/loader.gif';
 
 // social
-import linkedIn from '../assets/social/linkedin.png';
+import telegram from '../assets/social/telegram.png';
 import twitter from '../assets/social/twitter.png';
-import facebook from '../assets/social/facebook.png';
+import tiktok from '../assets/social/tiktok.webp';
+import reddit from '../assets/social/reddit.webp';
+import medium from '../assets/social/medium.png';
 
 import player from '../assets/players.png';
 
@@ -344,16 +346,25 @@ function Index() {
                                     </div>
                                 </div>
                             </div>
-                            <div className='col-md-2'>
+                            <div className='col-md-3'>
                                 <div className='row'>
-                                    <div className='col'>
-                                        <img src={twitter} className="img-fluid" />
+                                    <div className='col social-img'>
+                                        <a href="https://t.me/MEHG_Official" target="_blank"><img src={telegram} className="img-fluid" /></a>
                                     </div>
-                                    <div className='col'>
-                                        <img src={facebook} className="img-fluid" />
+                                    {/* <div className='col social-img'>
+                                        <a href="https://t.me/MEHG_News" target="_blank"><img src={telegram} className="img-fluid" /></a>
+                                    </div> */}
+                                    <div className='col social-img'>
+                                        <a href="https://twitter.com/MEHG_official" target="_blank"><img src={twitter} className="img-fluid" /></a>
                                     </div>
-                                    <div className='col'>
-                                        <img src={linkedIn} className="img-fluid" />
+                                    <div className='col social-img'>
+                                        <a href='https://vm.tiktok.com/ZM8vHDfPm/' target="_blank"><img src={tiktok} className="img-fluid" /></a>
+                                    </div>
+                                    <div className='col social-img'>
+                                        <a href="http://metaelitehungergames.medium.com/" target="_blank"><img src={medium} className="img-fluid" /></a>
+                                    </div>
+                                    <div className='col social-img' >
+                                        <a href='https://www.reddit.com/u/MEHG_official/' target="_blank"><img src={reddit} className="img-fluid" /></a>
                                     </div>
                                 </div>
                             </div>
