@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import YoutubeBackground from 'react-youtube-background'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../assets/css/App.css';
 import logo from '../assets/logo.png';
@@ -9,6 +8,7 @@ import Nav from '../components/nav';
 import Top from '../assets/backgrounds/top-corrected.png';
 import Bottom from '../assets/backgrounds/bottom-corrected.png';
 import Carousel from 'react-bootstrap/Carousel';
+import whitepaper from '../assets/whitepaper.pdf';
 
 
 import champ from '../assets/characters/1.png';
@@ -32,6 +32,7 @@ import medium from '../assets/social/medium.png';
 
 import player from '../assets/players.png';
 
+import bgVideo from '../assets/backgrounds/bg-vid.mp4';
 import bgVideo2 from '../assets/backgrounds/bg-vid2.mp4';
 import bgVideo3 from '../assets/backgrounds/bg-vid3.mp4';
 
@@ -42,7 +43,7 @@ import stat4 from '../assets/stats/4.png';
 import stat5 from '../assets/stats/5.png';
 import stat6 from '../assets/stats/6.png';
 import Player from '../components/soundtrack';
-
+import fireArrow from '../assets/Fire_arrow.png';
 
 
 function Index() {
@@ -130,38 +131,41 @@ function Index() {
     useEffect(() => {
         setTimeout(() => {
             setIsLoaded(true);
-        }, 16000);
+        }, 8000);
     }, []);
 
     return (
         isLoaded ?
-            <div className="container">
+            <div className="">
                 <Nav logo={logo} />
                 <img src={Top} className="img-fluid bg-top" />
-                <YoutubeBackground videoId={"4P5aJahaqoI"} className="" overlay={"rgba(0,0,0,.4)"} nocookie={true} >
-                    <header className="App-header">
-                        <Hero />
-                        <div className='text-center'>
-                            <img src={logo} className="App-logo" alt="logo" />
-                            <p>
-                                <a className='btn btn-secondary btn-lg'>Seed Sale</a> &nbsp;&nbsp;&nbsp; <a className='btn btn-dark btn-lg'>Claim Airdrop</a>
-                            </p>
-                            <div className='row'>
-                                <div className='col'>
-                                    <center>Powered by</center>
-                                    <img src={bsc} height={50} />
-                                </div>
+
+                <header className="App-header" id="top">
+                    <Hero />
+                    <video autoPlay muted loop style={{ opacity: "0.3" }}>
+                        <source src={bgVideo} type="video/mp4" />
+                    </video>
+                    <div className='text-center video-content'>
+                        <img src={logo} className="App-logo" alt="logo" />
+                        <p><h1 style={{ color: '#D09821' }}>P2P Gaming experience</h1></p>
+                        <p>
+                            <a className='btn btn-secondary btn-lg'>Seed Sale</a> &nbsp;&nbsp;&nbsp; <a className='btn btn-dark btn-lg'>Claim Airdrop</a>
+                        </p>
+                        <div className='row'>
+                            <div className='col'>
+                                <center>Powered by</center>
+                                <img src={bsc} height={50} />
                             </div>
                         </div>
+                    </div>
 
 
-                    </header>
-                </YoutubeBackground>
+                </header>
                 <Player />
                 <img src={Bottom} className="img-fluid bg-bottom" />
                 <img src={Top} className="img-fluid bg-top" />
                 <section className="character-area">
-                    <video autoPlay muted loop style={{ opacity: 0.3 }}>
+                    <video autoPlay muted loop style={{ opacity: "0.3" }}>
                         <source src={bgVideo3} type="video/mp4" />
                     </video>
                     <div className='container text-center video-content'>
@@ -192,8 +196,7 @@ function Index() {
                 <section className='character-area stats'>
                     <div className='container text-center mb-5 mt-5'>
 
-                        <hr className='stats-title' />
-                        <br />
+                        <hr className='stats-title mt-5 mb-5' />
                         <p className='animate__animated animate__fadeInLeft animate__delay-4s'>An AAA gaming experience with cinematic quality 3D special effects in an interactive open-world RPG built in DeFi.</p>
                         <p className='animate__animated animate__fadeInRight animate__delay-5s'>MetaElite Hunger Games merges gaming and cryptocurrency in a unique synergy and, a fully decentralized protocol, Meta Elite Hunger Games represents a new age in gaming.</p>
 
@@ -225,7 +228,7 @@ function Index() {
                                 <div className='container'>
                                     <img src={mehgt} className='card-img' />
                                     <div className='text-center'>
-                                        <small>Governance</small>
+                                        <small>Market cap</small>
                                         <h4 className="card-title text-bold" style={{ color: "#D09821" }}>N/A</h4>
                                     </div>
                                 </div>
@@ -314,7 +317,7 @@ function Index() {
 
                 <img src={Bottom} className="img-fluid bg-bottom" />
                 <img src={Top} className="img-fluid bg-top" />
-                <section className='character-area'>
+                <section className='character-area partnerImg'>
                     <div className='container mt-5'>
                         <hr className='partner-title' />
                         <br />
@@ -339,31 +342,31 @@ function Index() {
                                         <a href="/gallery" style={{ padding: '10px', textDecoration: 'none', color: "#fff", fontWeight: '700', fontSize: '18px', lineHeight: '20px' }}>Gallery</a>
                                     </div>
                                     <div className='col-md mb-1'>
-                                        <a href="/about" style={{ padding: '10px', textDecoration: 'none', color: "#fff", fontWeight: '700', fontSize: '18px', lineHeight: '20px' }}>About</a>
+                                        <a href="/team" style={{ padding: '10px', textDecoration: 'none', color: "#fff", fontWeight: '700', fontSize: '18px', lineHeight: '20px' }}>Team</a>
                                     </div>
                                     <div className='col-md mb-1'>
-                                        <a href="" style={{ padding: '10px', textDecoration: 'none', color: "#fff", fontWeight: '700', fontSize: '18px', lineHeight: '20px' }}>Docs</a>
+                                        <a href={whitepaper} target="_blank" style={{ padding: '10px', textDecoration: 'none', color: "#fff", fontWeight: '700', fontSize: '18px', lineHeight: '20px' }}>Docs</a>
                                     </div>
                                 </div>
                             </div>
                             <div className='col-md-3'>
                                 <div className='row'>
-                                    <div className='col social-img'>
+                                    <div className='col'>
                                         <a href="https://t.me/MEHG_Official" target="_blank"><img src={telegram} className="img-fluid" /></a>
                                     </div>
                                     {/* <div className='col social-img'>
                                         <a href="https://t.me/MEHG_News" target="_blank"><img src={telegram} className="img-fluid" /></a>
                                     </div> */}
-                                    <div className='col social-img'>
+                                    <div className='col'>
                                         <a href="https://twitter.com/MEHG_official" target="_blank"><img src={twitter} className="img-fluid" /></a>
                                     </div>
-                                    <div className='col social-img'>
+                                    <div className='col'>
                                         <a href='https://vm.tiktok.com/ZM8vHDfPm/' target="_blank"><img src={tiktok} className="img-fluid" /></a>
                                     </div>
-                                    <div className='col social-img'>
+                                    <div className='col'>
                                         <a href="http://metaelitehungergames.medium.com/" target="_blank"><img src={medium} className="img-fluid" /></a>
                                     </div>
-                                    <div className='col social-img' >
+                                    <div className='col' >
                                         <a href='https://www.reddit.com/u/MEHG_official/' target="_blank"><img src={reddit} className="img-fluid" /></a>
                                     </div>
                                 </div>
@@ -371,6 +374,12 @@ function Index() {
                         </div>
                     </div>
                 </footer>
+                <div style={{ background: 'transparent', bottom: 5, right: 5, position: 'fixed', zIndex: '10000' }}>
+                    <a href="#top" className="btn btn-outline-dark" style={{ borderColor: '#D09821', color: '#D09821', border: 'none' }}>
+                        <img src={fireArrow} height={50} />
+                        <p><small>Back to Top</small></p>
+                    </a>
+                </div>
             </div>
             :
             <div className='App-header2' style={{ backgroundColor: '#000 !important' }}> <img src={Loader} className="img-fluid" /></div>

@@ -21,16 +21,16 @@ function Nav(props) {
 
                 <ul className="navbar-nav ms-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="/about">About</a>
+                        <a className="nav-link" href="/team">Team</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="/docs">Docs</a>
+                        <a className="nav-link" target="_blank" href={whitepaper}>Docs</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href="/gallery">Gallery</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" target="_blank" href={whitepaper}>Whitepaper</a>
+                        <a className="nav-link" target="_blank" href="http://metaelitehungergames.medium.com/">Blog</a>
                     </li>
 
                 </ul>

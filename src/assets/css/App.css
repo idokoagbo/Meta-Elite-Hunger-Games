@@ -17,7 +17,7 @@ body {
 }
 
 body {
-  /* background-image: url('../backgrounds/bg-3.jpg'); */
+  /* background-image: url('../backgrounds/image.png'); */
   /* background-color: #2c242b; */
   background: radial-gradient(#263238, #13191c 65%);
 }
@@ -317,6 +317,11 @@ hr.marketing-title:after {
 } */
 #myVideo {
   opacity: 0.8;
+}
+
+.partnerImg{
+  background: url('../backgrounds/image.png');
+  background-size: cover;
 }
 
 .videoBackground {
