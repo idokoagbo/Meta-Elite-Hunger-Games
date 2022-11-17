@@ -69,59 +69,59 @@ function Index() {
 
     const partners = [
         {
-            img: 'https://kryxivia.io/assets/img/partners/unicrypt.svg',
+            img: 'https://raw.githubusercontent.com/Kryxivia/Kryxivia.Website/6f82cf74725c1bccdc02ea8bfdb06313cd5ac6fa/assets/img/partners/unicrypt.svg',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/bakery.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/bakery.png',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/enjinstarter.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/enjinstarter.png?',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/poolz.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/poolz.png',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/dextool.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/dextool.png',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/poly-network.svg',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/poly-network.svg',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/ajoobz.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/ajoobz.png',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/defiboost-logo.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/defiboost-logo.png',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/checkdot.svg',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/checkdot.svg',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/locklet.svg',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/locklet.svg',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/maxx.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/maxx.png',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/vespertine.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/vespertine.png',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/avg.svg',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/avg.svg',
             url: null
         },
         {
-            img: 'https://kryxivia.io/assets/img/partners/dct-logo.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/dct-logo.png',
             url: null
         },
     ];
