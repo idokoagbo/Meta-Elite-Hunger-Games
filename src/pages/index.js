@@ -73,55 +73,55 @@ function Index() {
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/bakery.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/bakery.png?raw=true',
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/enjinstarter.png?',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/enjinstarter.png?raw=true',
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/poolz.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/poolz.png?raw=true',
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/dextool.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/dextool.png?raw=true',
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/poly-network.svg',
+            img: 'https://raw.githubusercontent.com/Kryxivia/Kryxivia.Website/6f82cf74725c1bccdc02ea8bfdb06313cd5ac6fa/assets/img/partners/poly-network.svg',
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/ajoobz.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/ajoobz.png?raw=true',
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/defiboost-logo.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/defiboost-logo.png?raw=true',
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/checkdot.svg',
+            img: 'https://raw.githubusercontent.com/Kryxivia/Kryxivia.Website/6f82cf74725c1bccdc02ea8bfdb06313cd5ac6fa/assets/img/partners/checkdot.svg',
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/locklet.svg',
+            img: 'https://raw.githubusercontent.com/Kryxivia/Kryxivia.Website/6f82cf74725c1bccdc02ea8bfdb06313cd5ac6fa/assets/img/partners/locklet.svg',
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/maxx.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/maxx.png?raw=true',
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/vespertine.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/vespertine.png?raw=true',
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/avg.svg',
+            img: 'https://raw.githubusercontent.com/Kryxivia/Kryxivia.Website/6f82cf74725c1bccdc02ea8bfdb06313cd5ac6fa/assets/img/partners/avg.svg',
             url: null
         },
         {
-            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/dct-logo.png',
+            img: 'https://github.com/Kryxivia/Kryxivia.Website/blob/main/assets/img/partners/dct-logo.png?raw=true',
             url: null
         },
     ];
